@@ -82,224 +82,61 @@ nav a.active {
   border-bottom: 2px solid #e4b363;
 }
 
-/* About */
-.about {
+/* İletişim */
+.contact {
+  padding: 50px 10%;
   background-color: #fff;
-  padding: 50px 10%;
   text-align: center;
 }
 
-.about h2 {
+.contact-header h2 {
   font-size: 2.5em;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 1.2em;
-  font-family: 'Lora', serif;
-  color: #555;
-  line-height: 1.6;
-}
-
-/* Services */
-.services {
-  padding: 50px 10%;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-.services h2 {
-  font-size: 2.5em;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 20px;
-}
-
-.services ul {
-  list-style: none;
-}
-
-.services ul li {
-  font-size: 1.2em;
-  font-family: 'Lora', serif;
-  margin: 10px 0;
-}
-
-/* Footer */
-footer {
-  background-color: #1a1a2e;
-  color: white;
-  text-align: center;
-  padding: 30px 10%;
-  font-family: 'Lora', serif;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero {
-    padding: 80px 10%;
-  }
-
-  .about, .services, .contact {
-    padding: 30px 10%;
-  }
-}
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap');
-
-/* Genel Ayarlar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif; /* Genel yazı fontu */
-}
-
-body {
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Hero */
-.hero {
-  background: url('https://images.unsplash.com/photo-1519678197248-1f87e4fc9630') center/cover no-repeat;
-  color: white;
-  padding: 120px 10%;
-  text-align: center;
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.5); /* Görselleri daha şık hale getirmek için */
-}
-
-.hero h1 {
-  font-size: 4em;
-  font-weight: 700;
   margin-bottom: 10px;
-  font-family: 'Montserrat', sans-serif; /* Hero başlık fontu */
+  font-family: 'Montserrat', sans-serif;
 }
 
-.hero p {
-  font-size: 1.4em;
-  font-weight: 500;
-  font-family: 'Lora', serif; /* Hero alt yazı fontu */
-}
-
-.tagline {
+.contact-info p {
   font-size: 1.2em;
-  font-style: italic;
-  margin-top: 20px;
-  font-weight: 400;
-  font-family: 'Lora', serif; /* Tagline fontu */
+  margin: 10px 0;
+  font-family: 'Lora', serif;
 }
 
-/* Header */
-header {
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
   background-color: #1a1a2e;
   color: white;
-  padding: 20px 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.8em;
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Navigation */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
-}
-
-nav a.active {
-  border-bottom: 2px solid #e4b363;
-}
-
-/* About */
-.about {
-  background-color: #fff;
-  padding: 50px 10%;
-  text-align: center;
-}
-
-.about h1 {
-  font-size: 2.5em;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 20px;
-}
-
-.about-content {
-  font-size: 1.2em;
-  font-family: 'Lora', serif;
-  color: #555;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Services */
-.services {
-  padding: 50px 10%;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-.services h2 {
-  font-size: 2.5em;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 20px;
-}
-
-.services ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.services ul li {
-  background-color: #fff;
-  padding: 20px;
-  font-size: 1.2em;
-  font-family: 'Lora', serif;
-  margin: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  width: 250px;
-  text-align: center;
-}
-
-.services ul li:hover {
-  background-color: #1a1a2e;
-  color: white;
-  border-color: #e4b363;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
+.contact-form button:hover {
+  background-color: #e4b363;
+}
+
+.whatsapp button {
+  padding: 12px 25px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.whatsapp button:hover {
+  background-color: #128c7e;
+}
+
 /* Footer */
 footer {
   background-color: #1a1a2e;
@@ -307,31 +144,6 @@ footer {
   text-align: center;
   padding: 30px 10%;
   font-family: 'Lora', serif;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero {
-    padding: 80px 10%;
-  }
-
-  .about, .services, .contact {
-    padding: 30px 10%;
-  }
-
-  .services ul {
-    flex-direction: column;
-  }
 }
 
 /* Hizmetler Kutu Stili */
@@ -371,4 +183,25 @@ footer {
   color: white;
   border-color: #e4b363;
   cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 80px 10%;
+  }
+
+  .about, .services, .contact {
+    padding: 30px 10%;
+  }
 }
