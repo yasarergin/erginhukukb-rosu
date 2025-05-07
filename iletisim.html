@@ -13,44 +13,26 @@
     <nav>
       <ul>
         <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="hakkimizda.html">Hakkımızda</a></li>
         <li><a href="hizmetler.html">Hizmetler</a></li>
         <li><a href="iletisim.html" class="active">İletişim</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="iletisim" class="contact">
-    <div class="contact-header">
-        <h2>İletişim</h2>
-        <p>Bizimle iletişime geçmek çok kolay! Her zaman size yardımcı olmaya hazırız.</p>
-    </div>
+  <section class="contact">
+    <h2>Bizimle İletişime Geçin</h2>
+    <form action="submit_form.php" method="POST">
+      <label for="name">Adınız Soyadınız:</label>
+      <input type="text" id="name" name="name" required>
 
-    <div class="contact-info">
-        <p><strong>Adres:</strong> Şişli, Halide Edip Adıvar Mah. Melikşah Sok. No:57 Daire:2, İstanbul</p>
-        <p><strong>Telefon:</strong> <a href="tel:+905325825153">0532 582 5153</a></p>
-        <p><strong>E-posta:</strong> <a href="mailto:avtahsinergin@hotmail.com">avtahsinergin@hotmail.com</a></p>
-    </div>
+      <label for="email">E-posta Adresiniz:</label>
+      <input type="email" id="email" name="email" required>
 
-    <div class="contact-form">
-        <form action="https://formspree.io/f/mbloydzd" method="POST">
-            <label>
-                E-posta:
-                <input type="email" name="email" required>
-            </label>
-            <label>
-                Mesaj:
-                <textarea name="message" required></textarea>
-            </label>
-            <button type="submit">Gönder</button>
-        </form>
-    </div>
+      <label for="message">Mesajınız:</label>
+      <textarea id="message" name="message" required></textarea>
 
-    <div class="whatsapp">
-        <a href="https://wa.me/905325825153" target="_blank">
-            <button>WhatsApp'tan Ulaşın</button>
-        </a>
-    </div>
+      <button type="submit">Gönder</button>
+    </form>
   </section>
 
   <footer>
@@ -59,3 +41,4 @@
 
 </body>
 </html>
+
