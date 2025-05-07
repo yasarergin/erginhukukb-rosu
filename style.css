@@ -33,73 +33,27 @@ nav a {
     font-weight: 500;
 }
 
-.hero-slider {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-}
-
-.hero-slider .slide {
-    min-width: 100%;
-    background-size: cover;
-    background-position: center;
-    padding: 120px 10%;
+.hero {
+    background: url('https://images.unsplash.com/photo-1555375771-5f1b4f98a27b') center/cover no-repeat;
     color: white;
+    padding: 120px 10%;
     text-align: center;
 }
 
-.hero-slider .slide h1 {
+.hero h1 {
     font-size: 3em;
-    margin-bottom: 10px;
 }
 
-.hero-slider .slide p {
-    font-size: 1.2em;
-}
-
-.cta-button {
-    background-color: #e4b363;
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-size: 1em;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: #d1a049;
-}
-
-.about {
+.about, .services, .contact {
     padding: 50px 10%;
     background-color: white;
     margin-bottom: 20px;
-    text-align: center;
 }
 
-.about h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #1a1a2e;
-}
-
-.about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.about-text {
-    width: 60%;
-    font-size: 1.1em;
-    color: #555;
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.services ul {
+    list-style: disc;
+    margin-top: 15px;
+    padding-left: 20px;
 }
 
 .contact form {
@@ -148,34 +102,6 @@ footer {
     padding: 30px 10%;
 }
 
-/* Responsive Tasarım */
-@media (max-width: 768px) {
-    .hero-slider .slide h1 {
-        font-size: 2em;
-    }
-
-    .hero-slider .slide p {
-        font-size: 1em;
-    }
-
-    .cta-button {
-        padding: 12px 20px;
-    }
-
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-text {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .about-image img {
-        width: 100%;
-    }
-}
 
 
 
