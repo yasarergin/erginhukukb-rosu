@@ -33,31 +33,36 @@ nav a {
     font-weight: 500;
 }
 
-/* Hero Section */
-.hero {
-    background: url('https://images.unsplash.com/photo-1555375771-5f1b4f98a27b') center/cover no-repeat;
-    color: white;
+.hero-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-slider .slide {
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
     padding: 120px 10%;
+    color: white;
     text-align: center;
 }
 
-.hero h1 {
+.hero-slider .slide h1 {
     font-size: 3em;
+    margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 1.5em;
-    margin-top: 10px;
+.hero-slider .slide p {
+    font-size: 1.2em;
 }
 
 .cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
     background-color: #e4b363;
     color: white;
-    font-size: 1.2em;
+    padding: 12px 30px;
     text-decoration: none;
+    font-size: 1em;
     border-radius: 5px;
 }
 
@@ -65,46 +70,36 @@ nav a {
     background-color: #d1a049;
 }
 
-/* Hizmetler Section */
-.services {
+.about {
     padding: 50px 10%;
     background-color: white;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.services h2 {
+.about h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
+    color: #1a1a2e;
 }
 
-.service-cards {
+.about-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
-.service-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 30px;
-    width: 30%;
-    border-radius: 8px;
-    text-align: center;
+.about-text {
+    width: 60%;
+    font-size: 1.1em;
+    color: #555;
 }
 
-.service-card h3 {
-    font-size: 1.6em;
-    margin-bottom: 10px;
-}
-
-.service-card p {
-    font-size: 1em;
-}
-
-/* İletişim Section */
-.contact {
-    padding: 50px 10%;
-    background-color: #ffffff;
-    text-align: center;
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact form {
@@ -152,6 +147,36 @@ footer {
     text-align: center;
     padding: 30px 10%;
 }
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .hero-slider .slide h1 {
+        font-size: 2em;
+    }
+
+    .hero-slider .slide p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 12px 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+}
+
 
 
 
