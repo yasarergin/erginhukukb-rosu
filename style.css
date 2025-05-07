@@ -334,3 +334,41 @@ footer {
   }
 }
 
+/* Hizmetler Kutu Stili */
+.service-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 20px;
+  font-size: 1.2em;
+  font-family: 'Lora', serif;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #555;
+}
+
+.service-item:hover {
+  background-color: #1a1a2e;
+  color: white;
+  border-color: #e4b363;
+  cursor: pointer;
+}
