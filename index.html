@@ -48,12 +48,22 @@
         <p><strong>Telefon:</strong> <a href="tel:+905325825153">0532 582 5153</a></p>
         <p><strong>E-posta:</strong> info@erginhukuk.com</p>
 
-        <form action="mailto:info@erginhukuk.com" method="post" enctype="text/plain">
-            <input type="text" name="isim" placeholder="Adınız Soyadınız" required>
-            <input type="email" name="email" placeholder="E-posta Adresiniz" required>
-            <textarea name="mesaj" rows="5" placeholder="Mesajınız" required></textarea>
-            <button type="submit">Gönder</button>
-        </form>
+       <!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/mbloydzd"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 
         <a class="whatsapp-button" href="https://wa.me/905325825153" target="_blank">
             WhatsApp'tan Ulaşın
