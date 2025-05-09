@@ -483,6 +483,16 @@ footer {
   .services {
     padding: 30px 10%;
   }
+  /* Logo stilini güncelle */
+.logo {
+  position: absolute; /* Logo'yu sayfanın en üstüne yerleştir */
+  top: 0; /* Üst kenara yasla */
+  left: 0; /* Sol kenara yasla */
+  width: 200px; /* Logo genişliğini büyüt */
+  height: auto; /* Yüksekliği otomatik olarak ayarla, genişliğe orantılı kalsın */
+  z-index: 10; /* Diğer içeriklerin önünde görünmesini sağla */
+}
+
 
   .service-boxes {
     grid-template-columns: 1fr 1fr;
