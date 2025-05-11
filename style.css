@@ -62,16 +62,26 @@ nav a.active {
 }
 
 .about-container {
-    display: block; /* Görsel olmayacağı için block yapıyoruz */
+    display: flex; /* Blok yerine flex yapıyoruz */
     max-width: 800px;
     margin: 0 auto; /* İçeriği ortalıyoruz */
+    align-items: center; /* Dikeyde ortalıyoruz */
 }
 
 .about-image {
-    display: none; /* Görsel olmayacağı için gizliyoruz */
+    flex: 0 0 40%; /* Sol taraf için %40 genişlik */
+    margin-right: 20px; /* Yazı ile arasında boşluk */
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* İsteğe bağlı: köşeleri yuvarlak yapar */
 }
 
 .about-text {
+    flex: 1; /* Sağ taraf kalan alanı kaplar */
     text-align: left; /* Yazıyı sola hizalıyoruz */
 }
 
@@ -263,6 +273,19 @@ footer {
     }
     .about p {
         font-size: 1em;
+    }
+    .about-container {
+        display: block; /* Küçük ekranlarda alt alta sıralansın */
+        text-align: center;
+    }
+    .about-image {
+        display: block;
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+    .about-text {
+        text-align: left;
     }
 
     .services {
