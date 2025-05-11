@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hakkımızda - Ergin Hukuk Bürosu</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .about-container {
+      display: flex;
+      align-items: center; /* Dikeyde ortalar */
+    }
+
+    .about-image {
+      flex: 0 0 45%; /* Genişliğin %45'i kadar yer kapla, ne kadar büyüyüp küçüleceğini ve başlangıç genişliğini belirtir */
+      margin-right: 20px; /* Metinle arasında biraz boşluk bırakır */
+    }
+
+    .about-image img {
+      display: block; /* Blok element gibi davranmasını sağlar */
+      width: 100%; /* Kendi konteynerinin genişliğine sığar */
+      height: auto; /* Oranları korur */
+    }
+
+    .about-text {
+      flex: 1; /* Kalan alanı kaplar */
+    }
+  </style>
 </head>
 <body>
 
@@ -22,8 +43,13 @@
 
   <section class="about">
     <h1>Hakkımızda</h1>
-    <div class="about-content">
-      <p>Ergin Hukuk Bürosu, kurucusu Av. Tahsin Ergin önderliğinde İstanbul Şişli’de faaliyet göstermektedir. Av. Tahsin Ergin, ceza, ticaret, aile, icra-iflas, iş ve tüketici hukuku dahil olmak üzere her türlü davada müvekkillerine etkili ve güvenilir hukuki danışmanlık sunar. Her türlü hukuk alanında hızlı ve doğru çözümler üretmeyi amaçlayan büromuz, müvekkillerinin hukuki problemlerine en uygun çözümleri sunmayı hedeflemektedir.</p>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="hakkımızda.png" alt="Ergin Hukuk Bürosu Hakkında Fotoğraf">
+      </div>
+      <div class="about-text">
+        <p>Ergin Hukuk Bürosu, kurucusu Av. Tahsin Ergin önderliğinde İstanbul Şişli’de faaliyet göstermektedir. Av. Tahsin Ergin, ceza, ticaret, aile, icra-iflas, iş ve tüketici hukuku dahil olmak üzere her türlü davada müvekkillerine etkili ve güvenilir hukuki danışmanlık sunar. Her türlü hukuk alanında hızlı ve doğru çözümler üretmeyi amaçlayan büromuz, müvekkillerinin hukuki problemlerine en uygun çözümleri sunmayı hedeflemektedir.</p>
+      </div>
     </div>
   </section>
 
@@ -31,7 +57,6 @@
     <p>© 2024 Ergin Hukuk Bürosu | Tüm hakları saklıdır.</p>
     <p>✆Telefon: [0532 582 5153]</p>
     <p>📧E-posta: [avtahsinergin@hotmail.com]</p>
-
   </footer>
 
 </body>
