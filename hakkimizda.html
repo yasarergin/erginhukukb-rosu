@@ -6,26 +6,31 @@
   <title>Hakkımızda - Ergin Hukuk Bürosu</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    .about {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Açık ve soft bir renk geçişi */
+      padding: 80px 10%;
+      text-align: center;
+    }
+
     .about-container {
-      display: flex;
-      align-items: center; /* Dikeyde ortalar */
-      padding: 20px; /* İç boşluk ekleyelim */
+      max-width: 800px;
+      margin: 0 auto; /* İçeriği ortalıyoruz */
     }
 
-    .about-image {
-      flex: 0 0 40%; /* Sol taraf için %40 genişlik */
-      margin-right: 20px; /* Yazı ile arasında boşluk */
+    .about h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #1a1a2e;
+      text-align: center; /* Başlığı ortalıyoruz */
     }
 
-    .about-image img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 5px; /* İsteğe bağlı: köşeleri yuvarlak yapar */
-    }
-
-    .about-text {
-      flex: 1; /* Sağ taraf kalan alanı kaplar */
+    .about p {
+      font-size: 1.1em;
+      color: #555;
+      font-family: 'Lora', serif;
+      line-height: 1.7; /* Daha okunaklı bir satır aralığı */
+      margin-bottom: 30px; /* Alt boşluğu artırıyoruz */
+      text-align: left; /* Yazıyı sola hizalıyoruz */
     }
   </style>
 </head>
@@ -46,17 +51,12 @@
   <section class="about">
     <h1>Hakkımızda</h1>
     <div class="about-container">
-      <div class="about-image">
-        <img src="images/hakkimizda.jpg" alt="Ergin Hukuk Bürosu Hakkında Fotoğraf">
-      </div>
-      <div class="about-text">
-        <p>Ergin Hukuk Bürosu, kurucusu Av. Tahsin Ergin önderliğinde İstanbul Şişli’de faaliyet göstermektedir. Av. Tahsin Ergin, ceza, ticaret, aile, icra-iflas, iş ve tüketici hukuku dahil olmak üzere her türlü davada müvekkillerine etkili ve güvenilir hukuki danışmanlık sunar. Her türlü hukuk alanında hızlı ve doğru çözümler üretmeyi amaçlayan büromuz, müvekkillerinin hukuki problemlerine en uygun çözümleri sunmayı hedeflemektedir.</p>
-      </div>
+      <p>Ergin Hukuk Bürosu, kurucusu Av. Tahsin Ergin önderliğinde İstanbul Şişli’de faaliyet göstermektedir. Av. Tahsin Ergin, ceza, ticaret, aile, icra-iflas, iş ve tüketici hukuku dahil olmak üzere her türlü davada müvekkillerine etkili ve güvenilir hukuki danışmanlık sunar. Her türlü hukuk alanında hızlı ve doğru çözümler üretmeyi amaçlayan büromuz, müvekkillerinin hukuki problemlerine en uygun çözümleri sunmayı hedeflemektedir.</p>
     </div>
   </section>
 
   <footer>
-    <p>© 2024 Ergin Hukuk Bürosu | Tüm hakları saklıdır.</p>
+    <p>© 2025 Ergin Hukuk Bürosu | Tüm hakları saklıdır.</p>
     <p>✆Telefon: [0532 582 5153]</p>
     <p>📧E-posta: [avtahsinergin@hotmail.com]</p>
   </footer>
