@@ -1,6 +1,6 @@
 /* Özel Arka Plan Stili */
 .hero {
-    background-image: url('https://i.ibb.co/v11gH7x/law-firm-bg.jpg'); /* Fotoğrafın URL'sini buraya yapıştırdım */
+    background-image: url('images/arkaplan.png'); /* Doğru dosya yolunuz */
     background-size: cover; /* Arka planın tüm alanı kaplamasını sağlar */
     background-position: center center; /* Arka planı ortalar */
     background-repeat: no-repeat; /* Arka planın tekrar etmesini engeller */
@@ -456,3 +456,6 @@ footer {
     }
 
     .service-box {
+        padding: 15px;
+    }
+}
