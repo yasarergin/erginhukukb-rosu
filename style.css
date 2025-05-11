@@ -54,40 +54,77 @@ nav a.active {
     border-bottom: 2px solid #e4b363;
 }
 
-/* Hakkımızda */
+/* Hakkımızda (Ana Sayfa) */
 .about {
-    background: #e0f2f7; /* Açık mavi, ferah bir arka plan */
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     padding: 80px 10%;
     text-align: center;
 }
 
 .about-container {
-    display: flex; /* Blok yerine flex yapıyoruz */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f0f8ff; /* Açık mavi arka plan */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.about-text {
+    text-align: left;
+}
+
+.about-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Hakkımızda (Sayfa) */
+.about-page {
+    background: #e0f2f7; /* Açık mavi, ferah bir arka plan */
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about-page .about-container {
+    display: flex; /* Flex container yapıyoruz */
     max-width: 960px; /* Daha geniş bir alan */
     margin: 0 auto; /* İçeriği ortalıyoruz */
     align-items: center; /* Dikeyde ortalıyoruz */
 }
 
-.about-image {
+.about-page .about-image {
     flex: 0 0 40%; /* Sol taraf için %40 genişlik */
     margin-right: 30px; /* Yazı ile arasında boşluk */
 }
 
-.about-image img {
+.about-page .about-image img {
     display: block;
-    width: 100%;
+    width: 100%; /* Kendi konteynerinin tamamını kaplasın */
     height: auto;
     object-fit: cover; /* Fotoğrafın boyutlarını koruyarak alanı kaplamasını sağlar */
     border-radius: 8px; /* Fotoğrafa hafif yuvarlaklık */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Hafif gölge */
 }
 
-.about-text {
+.about-page .about-text {
     flex: 1; /* Sağ taraf kalan alanı kaplar */
     text-align: left; /* Yazıyı sola hizalıyoruz */
 }
 
-.about p {
+.about-page .about-text p {
     font-family: 'Lora', serif; /* Daha zarif bir font */
     font-size: 1.2em; /* Biraz daha büyük yazı */
     color: #495057; /* Daha okunabilir renk */
@@ -272,6 +309,10 @@ footer {
     .about-container {
         display: block; /* Küçük ekranlarda alt alta sıralansın */
         text-align: center;
+        padding: 20px; /* Küçük ekranlarda daha az iç boşluk */
+        background-color: #f0f8ff; /* Açık mavi arka plan */
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     }
     .about-image {
         width: 100%;
@@ -281,6 +322,22 @@ footer {
     .about-text {
         text-align: left;
     }
+
+    .about-page {
+        padding: 60px 5%;
+    }
+    .about-page .about-container {
+        display: block;
+    }
+    .about-page .about-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .about-page .about-text {
+        text-align: left;
+    }
+
 
     .services {
         padding: 60px 5%;
