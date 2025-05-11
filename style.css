@@ -32,14 +32,20 @@ body {
 header {
     background-color: #1a1a2e;
     color: white;
-    padding: 20px 10%;
+    padding: 20px 10px; /* Yatay padding'i azalttım */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo {
+    width: auto; /* Genişliği içeriğe göre ayarla */
+    height: auto; /* Yüksekliği içeriğe göre ayarla */
+    z-index: 20; /* Daha yüksek bir z-index veriyoruz */
+}
+
 header .logo a {
-    color: white;
+    color: white; /* Yazı rengini beyaz yapıyoruz */
     text-decoration: none;
     font-size: 1.8em;
     font-weight: 700;
@@ -442,12 +448,16 @@ footer {
     }
     /* Logo stilini güncelle */
 .logo {
-    position: absolute; /* Logo'yu sayfanın en üstüne yerleştir */
-    top: 0; /* Üst kenara yasla */
-    left: 0; /* Sol kenara yasla */
-    width: 200px; /* Logo genişliğini büyüt */
-    height: auto; /* Yüksekliği otomatik olarak ayarla, genişliğe orantılı kalsın */
-    z-index: 10; /* Diğer içeriklerin önünde görünmesini sağla */
+    width: auto; /* Genişliği içeriğe göre ayarla */
+    height: auto; /* Yüksekliği içeriğe göre ayarla */
+    z-index: 20; /* Daha yüksek bir z-index veriyoruz */
+}
+
+header .logo a {
+    color: white; /* Yazı rengini beyaz yapıyoruz */
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 700;
 }
 
 
