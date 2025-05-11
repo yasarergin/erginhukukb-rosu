@@ -1,8 +1,8 @@
 /* Özel Arka Plan Stili */
 .hero {
     background-image: url('images/arkaplan.png'); /* Doğru dosya yolunuz */
-    background-size: cover; /* Arka planın tüm alanı kaplamasını sağlar */
-    background-position: center center; /* Arka planı ortalar */
+    background-size: cover; /* Arka planın tüm alanı kaplar */
+    background-position: top center; /* Fotoğrafı üste ortalar */
     background-repeat: no-repeat; /* Arka planın tekrar etmesini engeller */
     color: white;
     padding: 140px 10%;
@@ -32,20 +32,14 @@ body {
 header {
     background-color: #1a1a2e;
     color: white;
-    padding: 20px 10px; /* Yatay padding'i azalttım */
+    padding: 20px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    width: auto; /* Genişliği içeriğe göre ayarla */
-    height: auto; /* Yüksekliği içeriğe göre ayarla */
-    z-index: 20; /* Daha yüksek bir z-index veriyoruz */
-}
-
 header .logo a {
-    color: white; /* Yazı rengini beyaz yapıyoruz */
+    color: white;
     text-decoration: none;
     font-size: 1.8em;
     font-weight: 700;
