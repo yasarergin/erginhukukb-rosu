@@ -5,11 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ergin Hukuk Bürosu - Blog</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Açık gri arka plan */
+            color: #333;
+        }
+
+        header {
+            background-color: black; /* Siyah header */
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e4b363;
+        }
+
+        nav a.active {
+            color: #e4b363;
+        }
+
+        .blog-page {
+            padding: 60px 20px;
+            max-width: 960px;
+            margin: 20px auto;
+        }
+
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .blog-post {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post h3 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-family: 'Lora', serif;
+        }
+
+        .post-meta {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .blog-post p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #e4b363;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: #c89747;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #e4b363;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
+    <header>
         <nav>
-            <ul style="list-style: none; display: flex; gap: 15px; margin: 0;">
+            <ul>
                 <li><a href="index.html">Ana Sayfa</a></li>
                 <li><a href="hakkimizda.html">Hakkimizda</a></li>
                 <li><a href="hizmetler.html">Hizmetler</a></li>
@@ -20,7 +131,6 @@
     </header>
 
     <section class="blog-page">
-        <h1>Blog</h1>
         <div class="blog-posts">
             <div class="blog-post">
                 <h3>Kişisel Verilerin Korunması Kanunu'ndaki Son Gelişmeler ve Veri Sorumlularının Yükümlülükleri</h3>
@@ -40,9 +150,7 @@
     <footer>
         <p>© 2024 Ergin Hukuk Bürosu | Tüm hakları saklıdır.</p>
         <p>✆Telefon: [0532 582 5153]</p>
-        <p>📧E-posta: [avtahsinergin@hotmail.com]</p>
-
-
+        <p>📧E-posta: <a href="mailto:avtahsinergin@hotmail.com">avtahsinergin@hotmail.com</a></p>
     </footer>
 </body>
 </html>
