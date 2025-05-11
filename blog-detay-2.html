@@ -3,43 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aile Hukukunda Yeni Düzenlemeler - Ergin Hukuk Bürosu</title>
+    <title>Aile Hukukunda Boşanma Süreçleri - Ergin Hukuk Bürosu</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e4b363;
+        }
+
+        nav a.active {
+            color: #e4b363;
+        }
+
+        .blog-detail-page {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Ana başlığı ortala */
+        }
+
+        .blog-detail-page h1 {
+            font-size: 2.2em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-family: 'Lora', serif;
+        }
+
+        .post-meta {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .blog-detail-content {
+            text-align: left; /* İçeriği sola hizala, ortalamayı bozmamak için */
+            padding: 0 20px;
+        }
+
+        .blog-detail-content p {
+            margin-bottom: 20px;
+            text-align: justify; /* Yazıyı iki yana yasla */
+            hyphens: auto; /* Kelimeleri gerektiğinde böl */
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #e4b363;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
+    <header>
         <nav>
-            <ul style="list-style: none; display: flex; gap: 15px; margin: 0;">
+            <ul>
                 <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="hakkimizda.html">Hakkimizda</a></li>
                 <li><a href="hizmetler.html">Hizmetler</a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="iletisim.html">İletisim</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="blog-detail">
-        <h1>Aile Hukukunda Yeni Düzenlemeler</h1>
+    <section class="blog-detail-page">
+        <h1>Aile Hukukunda Boşanma Süreçleri, Velayet ve Nafaka Hükümlerine Dair Yeni Yargı İçtihatları</h1>
         <p class="post-meta">Yayınlandı: 10 Mayıs 2025 | Yazar: Yardımcı Avukat</p>
-        <p>Aile hukuku, toplumun temelini oluşturan aile birliğinin korunması ve bireylerin aile içindeki hak ve yükümlülüklerini düzenleyen önemli bir hukuk dalıdır. Son zamanlarda bu alanda özellikle **boşanma süreçleri, velayet düzenlemeleri ve nafaka hükümleri** üzerine yoğunlaşan yeni düzenlemeler ve yargı içtihatları dikkat çekmektedir.</p>
-
-        <p>Boşanma davalarında, kusur tespiti ve delil değerlendirme süreçlerinde daha titiz bir yaklaşım benimsenmektedir. Özellikle aldatma vakalarında, elektronik delillerin (sosyal medya yazışmaları, e-postalar vb.) kabul edilebilirliği ve ispat gücü mahkemeler tarafından daha detaylı incelenmektedir. Ayrıca, çekişmeli boşanma davalarında psikolog ve pedagog raporlarının önemi artmakta, özellikle çocukların menfaatleri doğrultusunda daha kapsamlı değerlendirmeler yapılmaktadır.</p>
-
-        <p>Velayet düzenlemelerinde ise, **çocuğun üstün yararı** ilkesi ön planda tutulmaya devam etmektedir. Müşterek velayet uygulamalarının yaygınlaşması yönünde eğilimler gözlemlenmekte, ancak bu kararlar verilirken ebeveynlerin iletişim becerileri ve çocuğun psikolojik durumu detaylı olarak analiz edilmektedir. Kişisel ilişki kurma hakkı da, çocuğun sağlıklı gelişimi için ebeveynler arasında dengeli bir şekilde düzenlenmeye çalışılmaktadır.</p>
-
-        <p>Nafaka konusunda ise, özellikle süresiz nafaka uygulaması tartışmaları devam etmekle birlikte, mevcut yasal düzenlemeler çerçevesinde mahkemeler, tarafların ekonomik durumlarını ve ihtiyaçlarını dikkate alarak adil bir nafaka miktarı belirlemeye çalışmaktadır. Yargıtay'ın bu konudaki son içtihatları, nafaka kararlarının daha somut verilere dayanması ve tarafların ekonomik durumlarındaki değişikliklerin dikkate alınması yönündedir.</p>
-
-        <p>Aile hukuku alanındaki bu ve benzeri gelişmeler, bireylerin özel hayatlarını ve aile ilişkilerini doğrudan etkilemektedir. Ergin Hukuk Bürosu olarak, müvekkillerimize bu karmaşık süreçlerde doğru hukuki rehberliği sunmak ve haklarını en iyi şekilde savunmak için çalışmaktayız.</p>
+        <div class="blog-detail-content">
+            <p>Aile hukuku, toplumun temelini oluşturan aile birliğinin korunması ve aile bireylerinin haklarının güvence altına alınması amacıyla düzenlenmiş geniş bir hukuk dalıdır. Boşanma, aile birliğinin sona ermesiyle ortaya çıkan hukuki bir süreç olup, bu süreçte eşlerin mali durumları, müşterek çocukların velayeti ve nafaka gibi pek çok önemli konu yargı kararlarıyla çözüme kavuşturulmaktadır.</p>
+            <p>Boşanma davalarında delil değerlendirmesi, mahkemelerin adil bir karar verebilmesi için kritik öneme sahiptir. Yargıtay'ın son içtihatları, özellikle sosyal medya paylaşımları, elektronik posta yazışmaları ve tanık beyanlarının delil olarak kabul edilebilirliği konusunda önemli prensipler ortaya koymaktadır. Bu içtihatlar, boşanma davalarında sunulan delillerin niteliği ve ispat gücü açısından emsal teşkil etmektedir.</p>
+            <p>Velayet, boşanma davalarının en hassas konularından biridir. Çocuğun üstün yararı ilkesi, velayet düzenlemelerinde temel alınması gereken en önemli prensiptir. Yargıtay, velayet kararlarında çocuğun yaşı, eğitimi, sağlığı, kişisel gelişimi ve ebeveynlerle olan ilişkisi gibi pek çok faktörü dikkate almaktadır. Son içtihatlarda, özellikle müşterek çocuğun tercihinin velayet kararında ne kadar etkili olabileceği konusunda yeni değerlendirmeler yapılmıştır.</p>
+            <p>Nafaka, boşanma sonucu ekonomik olarak zor duruma düşecek olan eşin geçimini sağlamak amacıyla hükmedilen bir mali destektir. Yargıtay'ın nafaka kararlarındaki ekonomik değerlendirmeleri, eşlerin gelir düzeyleri, meslekleri, yaşları ve boşanmadaki kusur durumları gibi pek çok faktörü kapsamaktadır. Son içtihatlarda, özellikle süresiz nafaka uygulaması ve nafaka miktarlarının belirlenmesi konusunda önemli değişiklikler ve yorumlar bulunmaktadır.</p>
+            <p>Ergin Hukuk Bürosu olarak, aile hukuku alanındaki uzman kadromuzla boşanma süreçlerinin her aşamasında müvekkillerimize profesyonel hukuki destek sunmaktayız. Delil toplama, velayet düzenlemeleri, nafaka talepleri ve mal paylaşımı gibi konularda müvekkillerimizin haklarını en iyi şekilde savunmaktayız.</p>
+        </div>
     </section>
 
     <footer>
         <p>© 2024 Ergin Hukuk Bürosu | Tüm hakları saklıdır.</p>
         <p>✆Telefon: [0532 582 5153]</p>
-        <p>📧E-posta: [avtahsinergin@hotmail.com]</p>
-
-
+        <p>📧E-posta: <a href="mailto:avtahsinergin@hotmail.com">avtahsinergin@hotmail.com</a></p>
     </footer>
 </body>
 </html>
-              
