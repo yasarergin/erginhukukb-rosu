@@ -277,6 +277,10 @@ footer {
     .about-container {
         display: block; /* Küçük ekranlarda alt alta sıralansın */
         text-align: center;
+        padding: 20px; /* Küçük ekranlarda daha az iç boşluk */
+        background-color: #f0f8ff; /* Açık mavi arka plan */
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     }
     .about-image {
         display: block;
@@ -367,5 +371,61 @@ footer {
 
     .blog-posts {
         grid-template-columns: 1fr;
+    }
+}
+
+/* "Biz Kimiz?" Bölümü Stilleri (Ana Sayfa) */
+.about { /* Ana sayfadaki "Biz Kimiz?" bölümünü hedefliyor */
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about-container { /* Ana sayfadaki "Biz Kimiz?" içeriği */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f0f8ff; /* Açık mavi arka plan */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about h1 { /* Ana sayfadaki "Biz Kimiz?" başlığı */
+    font-family: 'Lora', serif;
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.about-text { /* Ana sayfadaki "Biz Kimiz?" yazısı */
+    text-align: left;
+}
+
+.about-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 5%;
+    }
+    .about-container {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .about h1 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+    }
+    .about-text p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
     }
 }
