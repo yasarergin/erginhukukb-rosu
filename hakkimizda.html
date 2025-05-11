@@ -20,8 +20,8 @@
     }
 
     .about-image {
-      flex: 0 0 50%; /* Sol taraf için %50 genişlik */
-      margin-right: 20px; /* Yazı ile arasında boşluk */
+      flex: 0 0 40%; /* Sol taraf için %40 genişlik - biraz küçültüldü */
+      margin-right: 30px; /* Yazı ile arasında daha fazla boşluk */
     }
 
     .about-image img {
@@ -29,6 +29,8 @@
       width: 100%; /* Kendi konteynerinin tamamını kaplasın */
       height: auto;
       object-fit: cover; /* Fotoğrafın boyutlarını koruyarak alanı kaplamasını sağlar */
+      border-radius: 8px; /* Fotoğrafa hafif yuvarlaklık */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Hafif gölge */
     }
 
     .about-text {
@@ -36,19 +38,12 @@
       text-align: left; /* Yazıyı sola hizalıyoruz */
     }
 
-    .about h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #1a1a2e;
-      text-align: center; /* Başlığı ortalıyoruz */
-    }
-
     .about p {
-      font-size: 1.1em;
-      color: #555;
-      font-family: 'Lora', serif;
-      line-height: 1.7; /* Daha okunaklı bir satır aralığı */
-      margin-bottom: 30px; /* Alt boşluğu artırıyoruz */
+      font-family: 'Lora', serif; /* Daha zarif bir font */
+      font-size: 1.2em; /* Biraz daha büyük yazı */
+      color: #495057; /* Daha okunabilir renk */
+      line-height: 1.8; /* Daha iyi okunabilirlik için satır aralığı */
+      margin-bottom: 30px; /* Alt boşluk */
     }
 
     /* Küçük ekranlar için düzenleme */
@@ -85,7 +80,6 @@
   </header>
 
   <section class="about">
-    <h1>Hakkımızda</h1>
     <div class="about-container">
       <div class="about-image">
         <img src="images/adaletheykel.jpg" alt="Adalet Heykeli">
