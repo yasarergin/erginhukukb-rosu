@@ -56,23 +56,38 @@ nav a.active {
 
 /* Hakkımızda */
 .about {
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Açık ve soft bir renk geçişi */
     padding: 80px 10%;
     text-align: center;
+}
+
+.about-container {
+    display: block; /* Görsel olmayacağı için block yapıyoruz */
+    max-width: 800px;
+    margin: 0 auto; /* İçeriği ortalıyoruz */
+}
+
+.about-image {
+    display: none; /* Görsel olmayacağı için gizliyoruz */
+}
+
+.about-text {
+    text-align: left; /* Yazıyı sola hizalıyoruz */
 }
 
 .about h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #1a1a2e;
+    text-align: center; /* Başlığı ortalıyoruz */
 }
 
 .about p {
     font-size: 1.1em;
-    max-width: 800px;
-    margin: 0 auto;
     color: #555;
     font-family: 'Lora', serif;
+    line-height: 1.7; /* Daha okunaklı bir satır aralığı */
+    margin-bottom: 30px; /* Alt boşluğu artırıyoruz */
 }
 
 /* Hizmetler */
@@ -144,10 +159,6 @@ nav a.active {
     margin: 10px 0;
     font-size: 1.1em;
     color: #333;
-}
-
-.contact-form {
-    margin-top: 30px;
 }
 
 .contact-form input,
@@ -227,12 +238,26 @@ footer {
         padding: 100px 10%;
     }
 
-    .about, .services, .contact-modern {
-        padding: 40px 10%;
+    .about {
+        padding: 60px 5%;
+    }
+    .about h1 {
+        font-size: 2.2em;
+    }
+    .about p {
+        font-size: 1em;
+    }
+
+    .services {
+        padding: 60px 5%;
     }
 
     .services ul {
         flex-direction: column;
+    }
+
+    .contact-modern {
+        padding: 40px 5%;
     }
 }
 /* Blog Bölümü Stilleri */
