@@ -3,106 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ergin Hukuk Bürosu - Ana Sayfa</title>
+    <title>Ergin Hukuk Bürosu</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
+    <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
         <nav>
-            <ul>
+            <ul style="list-style: none; display: flex; gap: 15px; margin: 0;">
                 <li><a href="index.html" class="active">Ana Sayfa</a></li>
-                <li><a href="hakkimizda.html">Hakkimizda</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
                 <li><a href="hizmetler.html">Hizmetler</a></li>
-                <li><a href="iletisim.html">İletisim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
-
     <section class="hero">
-        <h1>Ergin Hukuk Bürosu</h1>
-        <p>Hukuki sorunlarınıza hızlı ve etkili çözümler üretiyoruz.</p>
+        <div class="hero-content">
+            <h1>Av. Tahsin Ergin</h1>
+            <p>Kurucu & Yönetici Avukat - İstanbul</p>
+            <p class="tagline">Ergin Hukuk Bürosu, güvenceniz ve başarılarınız için yanınızda.</p>
+        </div>
     </section>
-
     <section class="about">
         <div class="about-container">
-            <h1>Biz Kimiz?</h1>
-            <p class="about-text">Ergin Hukuk Bürosu, müvekkillerine çeşitli hukuk alanlarında uzman danışmanlık ve avukatlık hizmetleri sunmaktadır. Deneyimli kadromuz ile her türlü hukuki ihtilafta yanınızdayız.</p>
-        </div>
-    </section>
-
-    <section class="services">
-        <h1>Hizmetlerimiz</h1>
-        <div class="service-boxes">
-            <div class="service-box">
-                <h2>Ceza Hukuku</h2>
-                <p>Ceza davalarında uzman avukatlarımızla yanınızdayız.</p>
-            </div>
-            <div class="service-box">
-                <h2>Aile Hukuku</h2>
-                <p>Boşanma, velayet ve nafaka gibi konularda destek sağlıyoruz.</p>
-            </div>
-            <div class="service-box">
-                <h2>İcra ve İflas Hukuku</h2>
-                <p>Alacak takibi ve iflas süreçlerinde profesyonel çözümler.</p>
-            </div>
-            <div class="service-box">
-                <h2>İş Hukuku</h2>
-                <p>İşçi ve işveren arasındaki hukuki sorunlarda danışmanlık.</p>
-            </div>
-            <div class="service-box">
-                <h2>Ticaret Hukuku</h2>
-                <p>Şirketler hukuku ve ticari davalarda uzman destek.</p>
-            </div>
-            <div class="service-box">
-                <h2>Tüketici Hukuku</h2>
-                <p>Tüketici haklarınızı koruma altına alıyoruz.</p>
+            <div class="about-text">
+                <h1>Biz Kimiz?</h1>
+                <p>Ergin Hukuk Bürosu, İstanbul merkezli olarak faaliyet gösteren, müvekkillerine hukukun çeşitli alanlarında uzmanlaşmış avukat kadrosuyla kapsamlı ve nitelikli danışmanlık ile avukatlık hizmetleri sunmaktadır. Büromuz, ceza hukuku, aile hukuku, iş hukuku, ticaret hukuku, gayrimenkul hukuku, miras hukuku ve idare hukuku başta olmak üzere geniş bir yelpazede hukuki sorunlara çözüm odaklı yaklaşımlar geliştirmeyi ilke edinmiştir. Şeffaflık, güvenilirlik ve müvekkil memnuniyeti prensipleriyle hareket eden Ergin Hukuk Bürosu, her bir müvekkilinin hukuki ihtiyaçlarını titizlikle analiz ederek, en uygun stratejileri belirlemekte ve adaletin tecelli etmesi için özveriyle çalışmaktadır.</p>
             </div>
         </div>
     </section>
-
-    <section class="blog">
-        <div class="blog-posts">
-            <div class="blog-post">
-                <h3>Yeni Web Sitemiz Yayında!</h3>
-                <div class="post-meta">Yayınlandı: 10 Mayıs 2025</div>
-                <p>Değerli müvekkillerimiz ve ziyaretçilerimiz, Ergin Hukuk Bürosu olarak yepyeni web sitemizin yayında olduğunu duyurmaktan büyük mutluluk duyuyoruz. Modern tasarımı ve kullanıcı dostu arayüzü ile yeni sitemiz, büromuz ve hizmetlerimiz hakkında daha detaylı bilgiye ulaşmanızı sağlayacak...</p>
-                <a href="#" class="read-more">Devamını Oku</a>
-            </div>
-            <div class="blog-post">
-                <h3>Hukuk Büromuz Taşındı</h3>
-                <div class="post-meta">Yayınlandı: 5 Mayıs 2025</div>
-                <p>Ergin Hukuk Bürosu olarak, daha iyi hizmet verebilmek adına yeni ofisimize taşındığımızı bildirmek isteriz. Merkezi konumuyla yeni büromuz, müvekkillerimiz için daha kolay ulaşılabilir bir lokasyonda bulunmaktadır...</p>
-                <a href="#" class="read-more">Devamını Oku</a>
+    <section class="blog" style="background-image: url('images/manzara3.jpg'); background-size: cover; background-position: center; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); padding: 40px 20px;">
+        <div style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+            <h1 style="margin-bottom: 20px;">Blog</h1>
+            <div class="blog-posts">
+                <div class="blog-post" style="background-color: rgba(255, 255, 255, 0.7); color: black; padding: 15px; margin-bottom: 15px; border-radius: 5px;">
+                    <h3>En Son Hukuki Gelişmeler</h3>
+                    <p class="post-meta">Yayınlandı: 11 Mayıs 2025 | Yazar: Av. Tahsin Ergin</p>
+                    <p>Son dönemde Türk hukuk sisteminde önemli değişiklikler ve yeni düzenlemeler hayata geçirilmektedir. Özellikle **Kişisel Verilerin Korunması Kanunu (KVKK)** kapsamında yapılan son güncellemeler, veri işleyen tüm gerçek ve tüzel kişilerin uyum süreçlerini yeniden değerlendirmelerini zorunlu kılmaktadır.</p>
+                    <a href="blog-detay-1.html" class="read-more" style="color: blue; text-decoration: none;">Devamını Oku</a>
+                </div>
+                <div class="blog-post" style="background-color: rgba(255, 255, 255, 0.7); color: black; padding: 15px; margin-bottom: 15px; border-radius: 5px;">
+                    <h3>Aile Hukukunda Yeni Düzenlemeler</h3>
+                    <p class="post-meta">Yayınlandı: 10 Mayıs 2025 | Yazar: Av. Tahsin Ergin</p>
+                    <p>Aile hukuku, toplumun temelini oluşturan aile birliğinin korunması ve bireylerin aile içindeki hak ve yükümlülüklerini düzenleyen önemli bir hukuk dalıdır. Son zamanlarda bu alanda özellikle **boşanma süreçleri, velayet düzenlemeleri ve nafaka hükümleri** üzerine yoğunlaşan yeni düzenlemeler ve yargı içtihatları dikkat çekmektedir.</p>
+                    <a href="blog-detay-2.html" class="read-more" style="color: blue; text-decoration: none;">Devamını Oku</a>
+                </div>
             </div>
         </div>
     </section>
-
-    <section class="contact-modern">
-        <div class="contact-header">
-            <h2>Bize Ulaşın</h2>
-            <p>Hukuki danışmanlık ve sorularınız için bizimle iletişime geçin.</p>
-        </div>
-        <div class="contact-content">
-            <div class="contact-info">
-                <p><strong>Adres:</strong> Şişli, İstanbul</p>
-                <p><strong>Telefon:</strong> 0532 XXX XX XX</p>
-                <p><strong>E-posta:</strong> info@erginhukuk.com</p>
-            </div>
-            <form action="#" method="post" class="contact-form">
-                <input type="email" name="email" placeholder="E-posta adresiniz" required>
-                <textarea name="message" placeholder="Mesajınız" required></textarea>
-                <button type="submit">Gönder</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
+    <footer style="text-align: center; padding: 20px; background-color: black; color: white;">
         <p>© 2024 Ergin Hukuk Bürosu | Tüm hakları saklıdır.</p>
         <p>✆Telefon: [0532 582 5153]</p>
-        <p>📧E-posta: <a href="mailto:avtahsinergin@hotmail.com">info@erginhukuk.com</a></p>
+        <p>📧E-posta: [avtahsinergin@hotmail.com]</p>
     </footer>
-
 </body>
 </html>
