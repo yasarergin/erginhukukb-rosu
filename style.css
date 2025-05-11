@@ -38,13 +38,6 @@ header {
     align-items: center;
 }
 
-header .logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.8em;
-    font-weight: 700;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -242,220 +235,72 @@ footer {
         flex-direction: column;
     }
 }
-/* Genel Ayarlar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif; /* Genel yazı fontu */
-}
-
-body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    background-color: #1a1a2e;
-    color: white;
-    padding: 20px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.8em;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Navigation */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-}
-
-nav a.active {
-    border-bottom: 2px solid #e4b363;
-}
-
-/* Footer */
-footer {
-    background-color: #1a1a2e;
-    color: white;
-    text-align: center;
-    padding: 30px 10%;
-    font-family: 'Lora', serif;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero {
-        padding: 80px 10%;
-    }
-
-    .about, .services, .contact {
-        padding: 30px 10%;
-    }
-}
-/* Genel Ayarlar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif; /* Genel yazı fontu */
-}
-
-body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    background-color: #1a1a2e;
-    color: white;
-    padding: 20px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.8em;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Navigation */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-}
-
-nav a.active {
-    border-bottom: 2px solid #e4b363;
-}
-
-/* Hizmetler */
-.services {
-    padding: 50px 10%;
-    background-color: #fff;
+/* Blog Bölümü Stilleri */
+.blog {
+    padding: 80px 10%;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
-.services h1 {
+.blog h1 {
     font-size: 2.5em;
-    margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
+    color: #1a1a2e;
+    margin-bottom: 40px;
 }
 
-/* Hizmet kutuları */
-.service-boxes {
+.blog-posts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
 }
 
-.service-box {
-    background-color: #f4f4f4;
-    padding: 20px;
+.blog-post {
+    background-color: white;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
 }
 
-.service-box h2 {
+.blog-post h3 {
     font-size: 1.8em;
     color: #333;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    color: #777;
+    font-size: 0.9em;
     margin-bottom: 15px;
 }
 
-.service-box p {
-    font-size: 1.1em;
-    color: #666;
-    line-height: 1.5;
+.blog-post p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.service-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Footer */
-footer {
-    background-color: #1a1a2e;
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e4b363;
     color: white;
-    text-align: center;
-    padding: 30px 10%;
-    font-family: 'Lora', serif;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
 
-/* Responsive */
+.read-more:hover {
+    background-color: #c89747;
+}
+
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    .blog {
+        padding: 60px 5%;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .services {
-        padding: 30px 10%;
-    }
-    /* Logo stilini güncelle */
-.logo {
-    position: absolute; /* Logo'yu sayfanın en üstüne yerleştir */
-    top: 0; /* Üst kenara yasla */
-    left: 0; /* Sol kenara yasla */
-    width: 200px; /* Logo genişliğini büyüt */
-    height: auto; /* Yüksekliği otomatik olarak ayarla, genişliğe orantılı kalsın */
-    z-index: 10; /* Diğer içeriklerin önünde görünmesini sağla */
-}
-
-
-    .service-boxes {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .service-box {
-        padding: 15px;
+    .blog-posts {
+        grid-template-columns: 1fr;
     }
 }
