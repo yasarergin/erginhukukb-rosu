@@ -2,7 +2,7 @@
 .hero {
     background-image: url('images/arkaplan.png'); /* Doğru dosya yolunuz */
     background-size: cover; /* Arka planın tüm alanı kaplar */
-    background-position: top center; /* Fotoğrafı üste ortalar */
+    background-position: center 20%; /* Orta ve üst kısmı gösterir */
     background-repeat: no-repeat; /* Arka planın tekrar etmesini engeller */
     color: white;
     padding: 140px 10%;
