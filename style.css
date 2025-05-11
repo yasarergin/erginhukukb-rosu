@@ -91,6 +91,7 @@ nav a.active {
 }
 
 /* Hizmetler */
+/* Hizmetler Bölümü (Güncellenmiş) */
 .services {
     background-color: #f9f9f9;
     padding: 80px 10%;
@@ -103,30 +104,46 @@ nav a.active {
     color: #1a1a2e;
 }
 
-.services ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
+.service-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
 }
 
-.services li {
+.service-box {
     background-color: white;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    font-size: 1.1em;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-box h2 {
+    font-size: 1.5em;
     color: #333;
-    min-width: 200px;
-    transition: 0.3s ease;
+    margin-bottom: 15px;
 }
 
-.services li:hover {
+.service-box p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.service-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 768px) {
+    .service-boxes {
+        grid-template-columns: 1fr;
+    }
+    .service-box {
+        text-align: left;
+    }
+}
 /* İletişim */
 .contact-modern {
     background: linear-gradient(135deg, #f8f9fa, #eaeaea);
